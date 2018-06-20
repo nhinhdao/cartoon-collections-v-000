@@ -14,7 +14,9 @@ def long_planeteer_calls(array)# code an argument here
   array.all? { |e| e.length <= 4} ? false : true
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  array.find {|e| e == cheese_types.each_char { |chr| chr}}
+  
 end
